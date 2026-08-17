@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Système WordPress Pro - ASIF Web Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        :root {
+            --primary-color: #0d6efd;
+            --dark-color: #1e293b;
+            --light-bg: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            background-color: #ffffff;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 80px 0;
+        }
+        .card-custom {
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            transition: transform 0.2s ease, shadow 0.2s ease;
+        }
+        .card-custom:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .btn-cta {
+            padding: 14px 28px;
+            font-weight: 700;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+        .badge-urgency {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeeba;
+        }
+        /* Style photo du CEO */
+        .ceo-avatar {
+            width: 170px;
+            height: 170px;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 8px 20px rgba(13, 110, 253, 0.15);
+        }
+
+       /* MOCKUP LIVRE ÉLÉGANT & ÉPURÉ */
+.book-mockup-wrapper {
+    position: relative;
+    display: inline-block;
+    perspective: 1000px;
+}
+
+.book-mockup-img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px 16px 16px 8px;
+    box-shadow: -10px 15px 30px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-mockup-wrapper:hover .book-mockup-img {
+    transform: translateY(-6px) rotateY(-4deg);
+    box-shadow: -15px 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.preview-badge-btn {
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.preview-badge-btn:hover {
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    border-color: #0d6efd;
+}
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+                <i class="bi bi-code-slash me-2"></i>ASIF <span class="text-dark">Web Agency</span>
+            </a>
+            <a href="#commander" class="btn btn-outline-primary fw-bold">Obtenir le guide</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="badge bg-primary-subtle text-primary fw-semibold px-3 py-2 mb-3 rounded-pill">
+                        <i class="bi bi-star-fill me-1"></i> Méthode Pratique &amp; Concrète
+                    </span>
+                    <h1 class="display-4 fw-bold text-dark mb-3">
+                        Le Système <span class="text-primary">WordPress Pro</span>
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        La méthode complète pour créer un site web professionnel, visible sur Google et prêt à développer votre activité.
+                    </p>
+                    <div class="d-grid d-sm-flex gap-3 mb-4">
+                        <a href="#commander" class="btn btn-primary btn-cta shadow-sm">
+                            <i class="bi bi-download me-2"></i>Télécharger le système
+                        </a>
+                        <a href="#programme" class="btn btn-light btn-cta border">Voir le programme</a>
+                    </div>
+                </div>
+                <!-- VIDEO SECTION -->
+                <div class="col-lg-5">
+                    <div class="ratio ratio-16x9 rounded-4 shadow-lg border overflow-hidden">
+                        <iframe src="C:\Users\DELL\Downloads\Produit digitale 2\Le_Système_WordPress_Pro_adverti…_202608052229.mp4" title="Présentation du produit" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-center text-muted small mt-2"><i class="bi bi-play-circle me-1"></i> Découvrir le livre en 2 minutes</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACCROCHE ET PROBLEMES -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold">Tu veux un site web pour ton activité…</h2>
+                    <p class="text-muted">Mais tu te heurtes à ces obstacles au quotidien :</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-3 border h-100 text-center">
+                        <i class="bi bi-x-circle-fill text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold fs-6">Perdu au départ</h5>
+                        <p class="small text-muted mb-0">Tu ne sais pas par où commencer ni quel hébergeur choisir.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-3 border h-100 text-center">
+                        <i class="bi bi-clock-history text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold fs-6">Temps perdu</h5>
+                        <p class="small text-muted mb-0">Des jours entiers gâchés devant des tutos YouTube contradictoires.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-3 border h-100 text-center">
+                        <i class="bi bi-layout-text-window-reverse text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold fs-6">Rendu amateur</h5>
+                        <p class="small text-muted mb-0">Un site qui ne fait pas professionnel et qui n'inspire pas confiance.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 bg-white rounded-3 border h-100 text-center">
+                        <i class="bi bi-search-heart text-danger fs-1 mb-3"></i>
+                        <h5 class="fw-bold fs-6">Invisible sur Google</h5>
+                        <p class="small text-muted mb-0">Zéro visiteur, zéro demande de devis et zéro client.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- SECTION PRÉSENTATION DU PRODUIT PRO -->
+<section class="py-5">
+    <div class="container py-4">
+        <div class="row align-items-center g-5">
+            
+            <!-- COUVERTURE MOCKUP + BOUTON D'EXTRAIT -->
+            <div class="col-lg-5 text-center">
+                <div class="book-mockup-wrapper my-3">
+                    <img src="images/couverture.png" alt="Le Système WordPress Pro" class="book-mockup-img">
+                </div>
+                
+                <div class="mt-3">
+                    <button class="btn btn-sm btn-outline-dark rounded-pill px-4 py-2 preview-badge-btn shadow-sm" data-bs-toggle="modal" data-bs-target="#modalExtrait">
+                        <i class="bi bi-book me-2 text-primary"></i>Feuilleter l'extrait (5 pages)
+                    </button>
+                </div>
+            </div>
+            
+            <!-- DESCRIPTION & BOUTON D'ACHAT -->
+            <div class="col-lg-7">
+                <span class="badge bg-success-subtle text-success fw-bold px-3 py-2 rounded-pill mb-2">Format PDF - Téléchargement Immédiat</span>
+                <h2 class="display-6 fw-bold mb-3">Le Guide Pratique : Le Système WordPress Pro</h2>
+                <p class="text-muted fs-5">
+                    Ce n'est pas de la théorie abstraite. C'est le manuel d'action ultime pour concevoir étape par étape un site professionnel rentable, sécurisé et prêt à accueillir vos premiers clients.
+                </p>
+                <ul class="list-unstyled my-4">
+                    <li class="mb-2"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i><strong>Accès instantané :</strong> Téléchargez votre livre au format PDF dès validation.</li>
+                    <li class="mb-2"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i><strong>Pratique &amp; Concret :</strong> Des checklists et étapes pas à pas directement applicables.</li>
+                    <li class="mb-2"><i class="bi bi-check2-circle text-primary fs-5 me-2"></i><strong>Inclus :</strong> La Boîte à outils 2026 + Accompagnement privé offert.</li>
+                </ul>
+                
+                <div class="pt-2">
+                    <a href="https://chariow.com/ton-lien-de-produit" target="_blank" class="btn btn-primary btn-cta shadow me-3 mb-2">
+                        <i class="bi bi-cart-check-fill me-2"></i>Commander maintenant (19 900 FCFA)
+                    </a>
+                    <a href="#programme" class="btn btn-outline-secondary btn-cta mb-2">Découvrir le contenu</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FENÊTRE MODAL DE LECTURE DE L'EXTRAIT (5 PAGES) -->
+<div class="modal fade" id="modalExtrait" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+            <div class="modal-header bg-light border-0 py-3">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text text-primary me-2"></i>Aperçu gratuit — Le Système WordPress Pro
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body p-0 bg-dark text-center">
+                <!-- CAROUSEL DE SLIDES DES 5 PAGES -->
+                <div id="carouselExtrait" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active p-3">
+                            <img src="images/page1.png" class="img-fluid rounded shadow-sm" style="max-height: 70vh;" alt="Page 1">
+                        </div>
+                        <div class="carousel-item p-3">
+                            <img src="images/page2.png" class="img-fluid rounded shadow-sm" style="max-height: 70vh;" alt="Page 2">
+                        </div>
+                        <div class="carousel-item p-3">
+                            <img src="images/page3.png" class="img-fluid rounded shadow-sm" style="max-height: 70vh;" alt="Page 3">
+                        </div>
+                        <div class="carousel-item p-3">
+                            <img src="images/page4.png" class="img-fluid rounded shadow-sm" style="max-height: 70vh;" alt="Page 4">
+                        </div>
+                        <div class="carousel-item p-3">
+                            <img src="images/page5.png" class="img-fluid rounded shadow-sm" style="max-height: 70vh;" alt="Page 5">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExtrait" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExtrait" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer bg-light border-0 justify-content-between">
+                <span class="text-muted small">Conseil : Cliquez sur les flèches pour faire défiler les pages</span>
+                <a href="https://chariow.com/ton-lien-de-produit" target="_blank" class="btn btn-primary fw-bold">
+                    Acheter la version complète (19 900 FCFA)
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- PROGRAMME DES MODULES -->
+    <section id="programme" class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Ce que tu vas apprendre</h2>
+                <p class="text-muted">Un programme clair réparti en 6 modules structurés</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 1</div>
+                        <h5 class="fw-bold">Comprendre la présence digitale</h5>
+                        <p class="small text-muted">Différences stratégiques entre réseaux sociaux, WhatsApp et site web.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 2</div>
+                        <h5 class="fw-bold">Préparer la création</h5>
+                        <p class="small text-muted">Définition de l'objectif, choix du nom de domaine et de l'hébergement pro.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 3</div>
+                        <h5 class="fw-bold">Concevoir son site WordPress</h5>
+                        <p class="small text-muted">Installation, choix du thème, identité visuelle et les 5 pages essentielles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 4</div>
+                        <h5 class="fw-bold">Outil commercial &amp; Vente</h5>
+                        <p class="small text-muted">Stratégies de conversion, WhatsApp, formulaires et e-commerce WooCommerce.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 5</div>
+                        <h5 class="fw-bold">Bases du Référencement (SEO)</h5>
+                        <p class="small text-muted">Fonctionnement de Google, mots-clés et optimisation des contenus.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="p-4 bg-white rounded-3 border card-custom h-100">
+                        <div class="badge bg-primary mb-3">Module 6</div>
+                        <h5 class="fw-bold">La Méthode ASIF Pro</h5>
+                        <p class="small text-muted">Le processus de création étape par étape et la checklist ultime avant publication.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION AUTEUR / CEO & CONTACTS -->
+    <section class="py-5 border-top border-bottom">
+        <div class="container py-4">
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-lg-4 text-center">
+                    <img src="C:\Users\DELL\Downloads\Produit digitale 2\IMG-20251023-WA0025.jpg" alt="CEO ASIF Web Agency" class="rounded-circle ceo-avatar mb-3">
+                    <h4 class="fw-bold mb-1">Abdou Sabourd IDRISSOU</h4>
+                    <span class="badge bg-primary-subtle text-primary fw-bold px-3 py-2 rounded-pill">
+                        CEO &amp; Fondateur - ASIF Web Agency
+                    </span>
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="fw-bold mb-3">Qui a conçu ce système ?</h3>
+                    <p class="text-muted">
+                        Webmaster professionnel et fondateur de l'agence <strong>ASIF Web Agency</strong>, j'accompagne les entreprises et indépendants dans la création de sites web performants, modernes et orientés résultats.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Ce livre rassemble la méthodologie exacte que nous appliquons sur le terrain pour nos clients : zéro théorie inutile, uniquement des étapes pratiques pour concevoir un outil qui vend et vous positionne en expert.
+                    </p>
+                    
+                    <!-- BLOC DE CONTACT DIRECT -->
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://wa.me/2290161816049" target="_blank" class="btn btn-success fw-bold btn-sm px-3 py-2">
+                            <i class="bi bi-whatsapp me-2"></i>WhatsApp Direct
+                        </a>
+                        <a href="mailto:sabourdidrissfafana@gmail.com" class="btn btn-outline-dark fw-bold btn-sm px-3 py-2">
+                            <i class="bi bi-envelope-fill me-2"></i>Envoyer un E-mail
+                        </a>
+                        <a href="tel:+2290161816049" class="btn btn-outline-secondary fw-bold btn-sm px-3 py-2">
+                            <i class="bi bi-telephone-fill me-2"></i>Téléphone
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUS EXCLUSIFS -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">🎁 Vos Bonus Exclusifs Inclus</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5">
+                    <div class="p-4 bg-white border border-2 border-primary rounded-4 h-100 shadow-sm">
+                        <span class="badge bg-success mb-2">BONUS #1</span>
+                        <h4 class="fw-bold">Boîte à Outils WordPress 2026</h4>
+                        <p class="text-muted small">La sélection exacte des 15 extensions indispensables pour assurer la sécurité, la rapidité et le SEO de ton site sans perdre de temps.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="p-4 bg-white border border-2 border-warning rounded-4 h-100 shadow-sm">
+                        <span class="badge bg-warning text-dark mb-2">BONUS #2 (Rareté)</span>
+                        <h4 class="fw-bold">Accompagnement Privé WhatsApp</h4>
+                        <p class="text-muted small mb-2">Un accès direct à l'équipe ASIF pour débloquer tes doutes et poser tes questions lors de ta création.</p>
+                        <p class="fw-bold text-danger small mb-0"><i class="bi bi-exclamation-triangle-fill me-1"></i> Réservé aux 15 premières commandes !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFRE DE PRIX ET CALL TO ACTION -->
+    <section id="commander" class="py-5">
+        <div class="container py-4 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4">
+                        <div class="badge-urgency p-2 rounded-3 mb-3 fw-bold small">
+                            ⚠️ Offre Spéciale de Lancement
+                        </div>
+                        <h3 class="fw-bold mb-2">Accès Immédiat au Système</h3>
+                        <p class="text-muted mb-4">Guide complet au format PDF + Tous les bonus débloqués</p>
+                        
+                        <div class="my-3">
+                            <span class="text-muted text-decoration-line-through fs-4 me-2">50 000 FCFA</span>
+                            <span class="display-4 fw-bold text-primary">19 900 FCFA</span>
+                        </div>
+
+                        <!-- LIEN VERS CHARIOW -->
+                        <a href="https://chariow.com/ton-lien-de-produit" target="_blank" class="btn btn-primary btn-cta my-4 shadow">
+                            <i class="bi bi-cart-check-fill me-2"></i>Commander sur Chariow
+                        </a>
+
+                        <div class="d-flex justify-content-center gap-3 text-muted small">
+                            <span><i class="bi bi-shield-check text-success me-1"></i> Paiement Sécurisé</span>
+                            <span><i class="bi bi-lightning-charge-fill text-warning me-1"></i> Accès Immédiat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4 border-top text-center text-muted small">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 ASIF Web Agency - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
